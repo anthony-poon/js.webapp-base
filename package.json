@@ -1,0 +1,45 @@
+{
+  "name": "portal",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.17",
+    "@fortawesome/free-solid-svg-icons": "^5.8.1",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "animejs": "^3.0.1",
+    "bootstrap": "^4.3.1",
+    "env-cmd": "^8.0.2",
+    "history": "^4.9.0",
+    "i": "^0.3.6",
+    "jquery": "^3.3.1",
+    "js-cookie": "^2.2.0",
+    "moment": "^2.24.0",
+    "node-sass": "^4.11.0",
+    "npm": "^6.9.0",
+    "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.6",
+    "react-calendar": "^2.18.1",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "2.1.8",
+    "react-transition-group": "^2.8.0",
+    "underscore": "^1.9.1",
+    "urijs": "^1.19.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "build:staging": "env-cmd .env.staging npm run build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

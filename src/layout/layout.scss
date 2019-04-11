@@ -1,0 +1,14 @@
+@import "../var";
+
+.layout__container {
+    display: flex;
+    min-height: 100vh;
+    .layout__rhs {
+    }
+}
+
+.collapse.show-md {
+    @include media-breakpoint-up(md) {
+        display: block;
+    }
+}

@@ -1,0 +1,48 @@
+@import "../../var";
+
+
+.layout-menu__container {
+    width: 250px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    z-index: $zindex-fixed;
+    background-color: $dark;
+    color: $light;
+    display: flex;
+    flex-direction: column;
+    @include media-breakpoint-down(sm) {
+        position: fixed;
+        width: 100%;
+    }
+    .layout-menu__header {
+        text-align: center;
+        padding-top: 0.8125rem;
+        padding-bottom: 0.8125rem;
+        font-size: 1.25rem;
+    }
+    .layout-menu__body {
+        padding: 2rem 0;
+        flex-grow: 1;
+    }
+    .layout-menu__footer {
+
+    }
+    .layout-menu__item {
+        display: block;
+        line-height: 1.25rem;
+        transition: 0.4s;
+        font-size: 0.875rem;
+        color: $light;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .layout-menu__item.active {
+        border-left: 5px $primary solid;
+    }
+    .layout-menu__item:hover {
+        cursor: pointer;
+        background-color: white;
+        color: $dark;
+    }
+}
